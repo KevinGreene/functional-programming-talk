@@ -19,18 +19,18 @@ Instead of a bash / quick python script, use something else
 
 ## JVM
 
-![Clojure](../images/clojure.png)
-![Scala](../images/scala.png)
+![Clojure](images/clojure.png)
+![Scala](images/scala.png)
 
 
 ## .NET
 
-![F#](../images/fsharp.png)
+![F#](images/fsharp.png)
 
 
 ## JavaScript
 
-![ClojureScript](../images/clojure.png)
+![ClojureScript](images/clojure.png)
 
 
 ## Utilize Functional Libraries
