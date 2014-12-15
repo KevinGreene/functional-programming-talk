@@ -3,8 +3,8 @@
 
 ## Drop Everything
 
-![Haskell](../images/haskell.png)
-![Erlang](../images/erlang.png)
+![Haskell](images/haskell.png)
+![Erlang](images/erlang.png)
 
 
 ## Seriously, Though
