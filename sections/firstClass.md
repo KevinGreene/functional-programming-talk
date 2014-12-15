@@ -76,7 +76,7 @@ Functional
 Functions called without all arguments return partial functions.
 
 ```
-def f(a,b) // some definition
+def f(a,b) // equivalent to f(a)(b)
 def partial = f(a) // returns a function that takes single argument
 ```
 
