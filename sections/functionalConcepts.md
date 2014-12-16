@@ -49,11 +49,15 @@ def sum(list){
 
 Functional
 ```
-def sum(ints: List[Int]): Int = ints match { 
-  case Nil => 0
-  case x :: tail => x + sum(tail)
-}
-```
+def sum(xs: List[Int]): Int = {
+  def inner(xs: List[Int], accum: Int): Int = {
+    xs match {
+      case x :: tail => inner(tail, accum + x)
+      case Nil => accum
+    }
+  }
+  inner(xs, 0)
+}```
 
 
 ### Pattern Matching

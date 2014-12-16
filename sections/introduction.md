@@ -3,6 +3,8 @@
 
 Kevin Greene - @SurrealAnalysis
 
+kevingreene.github.io/functional-programming-talk/
+
 
 ### Motivation
 
