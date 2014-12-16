@@ -53,8 +53,8 @@ public static int indexOfAny(String str, char[] searchChars) {
 
 Expanding paradigm knowledge increases programmer ability
 
-Many programmers find functional programs simpler
+Functional programming is often simpler
 
-Many programmers find functional programming more fun
+Functional programming is often more fun
 
 Recruiting and retention

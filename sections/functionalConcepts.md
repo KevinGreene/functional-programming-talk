@@ -10,18 +10,19 @@ Same input -> Same output
 
 ### Pure Functions Compared
 
-Object-Oriented:
+Object-Oriented
 ```
 processSomeObject(Object o) {
-  o.someProperty = "someValue"
+  this.state = "changed"
+  o.property = "new"
   return o
 }
 ```
 
-More Functional:
+Functional
 ```
 processSomeObject(Object o){
-  return new Object(o, someValue)
+  return new Object(o, "new")
 }
 ```
 
@@ -37,11 +38,11 @@ Prioritized in functional languages
 
 Imperative
 ```
-def sum(x){
-  if x is empty:
-    return 0
-  else
-    return x.pop() + sum(x)
+def sum(list){
+  def intSum = 0
+  for (x in list) {
+    intSum = intSum + x
+  }
 }
 
 ```

@@ -10,7 +10,7 @@ Functions can be returned by functions
 
 ### Arguments Compared
 
-Imperative:
+Imperative
 ```
 applySpecificFunction(Collection c){
   def newCollection = new Collection
@@ -37,6 +37,10 @@ Functions can return other functions
 ### Return Value Example
 
 ```
+def applyTwice(f) {
+  return f(f)
+}
+
 def addThree(x) {
   return x + 3
 }
@@ -85,18 +89,18 @@ def partial = f(a) // returns a function that takes single argument
 
 Imperative
 ```
- def modN(n: Int)(x: Int) = ((x % n) == 0)
+ def modN(n, x) = (x % n) == 0
 
- // Mod 3
+ def n = 3
  for(x in list){
-   modN(3, x)
+   modN(n, x)
  }
  ```
 
 Functional
 
 ```
- def modN(n: Int)(x: Int) = ((x % n) == 0)
+ def modN(n, x) = (x % n) == 0
  def mod3 = modN(3)
  for(x in list){
    mod3(x)
