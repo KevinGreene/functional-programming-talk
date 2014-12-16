@@ -1,7 +1,7 @@
 ## Why?
 
 
-### Concurrency
+### Concurrency / Parallelism
 
 Stateless functions are inherently parallelizable
 
@@ -47,6 +47,13 @@ public static int indexOfAny(String str, char[] searchChars) {
 (defn index-of-any [pred coll]
   (first (index-filter pred coll)))
 ```
+
+
+### Testing
+
+Significantly less setup due to lack of state
+
+Can generate huge amounts of tests with QuickCheck
 
 
 ### Holistic Reasons

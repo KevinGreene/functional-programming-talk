@@ -13,11 +13,35 @@
 
 ### Parallelizable Computation
 
+Single Core
+
+```clojure
+(map + (iterate inc 0) (iterate inc 1))
+```
+
+Multiple Cores
+```clojure
+(pmap + (iterate inc 0)(iterate inc 1))
+```
+
 
 ### DSLs
 
+Midje
+
+```clojure
+(facts "about `first-element`"
+  (fact "it normally returns the first element"
+    (first-element [1 2 3] :default) => 1
+    (first-element '(1 2 3) :default) => 1)
+```
+
 
 ### Data Manipulation
+
+Functional programming is already built on data transforms
+
+Easily parallelizability makes data import faster
 
 
 ### Web Development
