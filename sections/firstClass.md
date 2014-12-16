@@ -5,8 +5,6 @@
 
 Functions can be passed as arguments
 
-Functions can be returned by functions
-
 
 ### Arguments Compared
 

@@ -44,10 +44,20 @@ def sum(list){
     intSum = intSum + x
   }
 }
-
 ```
 
 Functional
+```
+def sum(xs: List[Int]): Int = {
+  xs match {      
+    case Nil => 0
+    case x :: tail => x + sum(tail)
+  }
+}```
+
+
+### Tail Recursion
+
 ```
 def sum(xs: List[Int]): Int = {
   def inner(xs: List[Int], accum: Int): Int = {
